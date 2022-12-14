@@ -5,62 +5,314 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .header{
-            background-image: url(image/background.png);
-            background-size: cover;
-            height: 150px;
+        *{
             margin: 0%;
             padding: 0%;
             font-family: sans-serif;
-            font-size: 4px;
-            font-display: flex;
-            color: black;
         }
-        a:link{
-            color: black;
-            text-decoration: none;
-        }
-        ul li{
-            display: flex;
+        .header{
+            background-image: url(image/background.jpg);
+            background-size: cover;
+            height: 700px;
+            /* display: inline-block; */
+            /* /* width:100px; */
         }
         .nav{
-            display:flex
+            display:flex;
+            font-size: 30px;
+            display: inline-block;
+            padding-top: 20px;
+            padding-left: 35px;
+            font-size: 35px;
         }
-        /* .image{ */
-            /* border: 1px; */
-            /* margin: 100px 200px 300px 400px; */
-            /* padding: 30%; */
+        button{
+            border: none;
+            font-size: 10px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 200px;
+            margin-left:0px;
+            /* border-style: solid; */
+        
         }
-        /* .section.section1.section2{ */
+        h1{
+            /* margin: ; */
+            padding-top: 200px;
+            padding-left: 30px;
+            font-size: 60px;
+        }
+        .serchbar{
+            padding:15px ;
+            padding-right: 350px;
+            border: white;
+            font-size: 20px;
+        }
+        select{
+            border:wheat;
+            padding: 15px;
+            padding-right: 20px;
+            font-size: 20px;
+        
+        }
+        option{
+            padding: 400px;
+        }
+        p{
+            padding-left: 30px;
+        }
+        .photo{
+            padding-top: 300px;
+            padding-left: 50px;
+            display: flex;
+            /* height: 800px; */
+            height: 400px;;
+        }
+        .maptext{
+            display: flex;
+        }
+        .maptop{
+            padding-left: 30px;
+            font-size: 25px;
+        }
+        .map{
+            padding-left: 40px ;
+            width: 900px;
+        }
+        .mapcites{
+            display: inline-flex;
+            width: 100%;
+            /* justify-content: center; */
+            padding-left: 20px;
+
+        }
+        .mapcites{
+            display: flex;
+            width: 100%;
+        }
+        .cites{
+            width: 25%;
+
+        }
+        li{
+            padding: 15px;
+        }
+        .ubereats{
+            font-size: 25px;
+            padding-left: 30px;
+        }
+        .mapcountries{
+            display:flex;
+            width: 100%;
+            /* padding-left: 20px; */
+        }
+        .countries{
             /* display: flex; */
-            /* margin: 20px 30px 20px 30px; */
+            width: 25%;
         }
+        .footer{
+            padding-top: 1650px;
+        }
+        .mainfooter{
+            width: 100%;
+            display: flex;
+        }
+        .rightfoot{
+            display: flex;
+            /* width: 60%; */
+            /* padding-left: 30px; */
+        }
+        
+
 
             
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="nav"><ul type="none">
-            <li> <a href="#"display=flex><span>u</span>ber<b><span>E</span>ats</b> </a></li>
-            <li><a href="#"display=flex><button >log in</button></a></li>
-            <li><a href="#"><button >sign up</button></a></li></ul>
-        </div>
-        <a href="#" style="text-decoration: none;"><h4>Order food to your door</h4>
-        <input type="button" value="" placeholder="Enter dilavery address">Enter dilavry address</a>
-    </div>
-    <br><br>
-    <div class="section">
-        <a href="" target="_blank"><img src="../UberEats/image/employe.png" alt="" height="250px" width="33%" ></a>
-         <h2>Feed your emplyoees</h2></div>
-    <div class="section1"><a href="" target="_blank"><img src="../UberEats/image/resturent.png" alt="" height="250px" width="33%"></a>
-    <h2>your resturent, delivered</h2></div>
-    <div class="section2"><a href="" target="_blank"><img src="../UberEats/image/drive.png" alt="" height="250px" width="33%"></a>
-    <h2>Deliver with ubr Eats</h2></div>
-    <div class="">
+        <!-- <div class="nav"> -->
+                <div class="nav"></div>
+                <div class="nav"><i class="fa-solid fa-bars"></i><span>u</span>ber <b>Eats</b></div>
+                <div class="nav" style="margin-left:900px;"><button style="background-color: white; color: black; font-size: 20px;">Log in</button></div>
+                <div class="nav"><button style="font-size: 20px;">Sign up</button></div>
 
+        <div>
+            <h1>Order food to your door</h1>
+            <br><br>
+            <label for="" style="margin-left: 30px;"><i class="fa-solid fa-location-dot"></i>
+            <input class="serchbar" type="serch" id="location" placeholder="Enter delivery address"></label>
+            <!-- <label for=""></label> -->
+            <select name="delivery time" id="delivery time">
+                <option value="delivernow">Deliver now</option>
+                <option value="Scheduleforlater">Schedule for later</option>
+            </select>
+            <button><b>Find Food</b></button>
+            <br><br>
+            <p><u>Sign in</u> for your recent address</p>
+        </div>  
+    <div class="photo">
+        <div class="employe">
+            <img src="image/employe.png" alt="" width="92%">
+            <br><br>
+            <h2>Feed your employees</h2>
+            <br>
+            <p><u>Creat a business account</u></p>
+         </div>
+         <div class="resturant">
+            <img src="image/resturent.png" alt="" width="92%">
+            <br><br>
+            <h2>your restaurent, delivered</h2>
+            <br>
+            <p><u>Add your restaurant</u></p>
+          </div>
+          <div class="drive">
+            <img src="image/drive.png" alt="" width="92%">
+            <br><br>
+            <h2>Deliver with uber Eats</h2>
+            <br>
+            <p><u>sign up to deliver</u></p>
+          </div>
     </div>
+    <div  class="map-image">
+        <div class="maptext">
+            <div class="maptop"><h2>Cities near me</h2></div>
+            <div class="mapside" style="padding-left: 1000px; margin-top: 20px;" ><p><u>view all 500+ cities </u></p></div>
+        </div>
+        <div class="map">
+            <br>
+            <img src="image/mapphoto.png" alt="">
+        </div>
+        <br>
+        <ul type="none">
+                <div class="mapcites">
+                <div class="cites">
+                    <li>Akron</li>
+                    <li>Albuquerque</li>
+                    <li>Bridgeport</li>
+                    <li>Concord</li>
+                    <li>Dayton</li>
+                    <li>El Paso</li>
+                </div>
+                <div class="cites">
+                    <li>Hartford</li>
+                    <li>Houston</li>
+                    <li>Indianapolis</li>
+                    <li>McAllen</li>
+                    <li>Mesa</li>
+                    <li>Milwaukee</li>
+                </div>
+                <div class="cites">
+                    <li>Nashville</li>
+                    <li>New Orleans</li>
+                    <li>Oklahoma City</li>
+                    <li>Omaha</li>
+                    <li>Orlando</li>
+                    <li>Palm Bay</li>
+                </div>
+                <div class="cites">
+                    <li>Providence</li>
+                    <li>Queens</li>
+                    <li>San Antonio</li>
+                    <li>Stony Brook</li>
+                    <li>Tucson</li>
+                    <li>West Hollywood</li>
+                </div>
+                </div>
+        </ul>
+        <br><br><br>
+        <div class="allcountries" style="display: flex;">
+            <div class="ubereats"><h2>Countries with uber Eats</h2></div>
+            <div class="view"><p style="padding-left: 850px ; margin-top: 20px;" ><u>View all countries</u></p></div>
+        </div>
+        <br>
+        <ul type="none">
+            <div class="mapcountries">
+                <div class="countries">
+                    <li>Australia</li>
+                    <li>Belgium</li>
+                    <li>Bolivia</li>
+                    <li>Canada</li>
+                    <li>Chile</li>
+                    <li>Costa Rica</li>
+                    <li>Dominican Republic</li>
+                    <li>Ecuador</li>
+                </div>
+                <div class="countries">
+                    <li>El Salvador</li>
+                    <li>France</li>
+                    <li>Germany</li>
+                    <li>Guatemala</li>
+                    <li>Ireland</li>
+                    <li>Italy</li>
+                    <li>Japan</li>
+                    <li>Kenya</li>
+                </div>
+                <div class="countries">
+                    <li>Mexico</li>
+                    <li>Netherlands</li>
+                    <li>New Zealand</li>
+                    <li>Panama</li>
+                    <li>Poland</li>
+                    <li>Portugal</li>
+                    <li>South Africa</li>
+                    <li>Spain</li>
+                </div>
+                <div class="countries">
+                    <li>Sri Lanka</li>
+                    <li>Sweden</li>
+                    <li>Switzerland</li>
+                    <li>Taiwan (ROC)</li>
+                    <li>United Kingdom</li>
+                    <li>United States</li>
+                </div>
+            </div>
+            </div>
+        </ul>
+    </div>
+    <br>
+    <hr style="border: 1px;">
+    <br><br><br><br><br><br><br>
+    <div class="footer">
+        <div class="mainfooter" >
+            <div class="leftfoot"  style=" width: 50%;">
+                <img src="image/97c43f8974e6c876.svg" alt="" style="height: 20px; padding-left: 40px;"><br><br><br>
+                <img src="Image/783bb4a82e5be29e (2).svg" alt="" style=" width: 150px; padding-left: 40px; padding-top: 150px;">
+                <img src="image/google.png" alt="" style="width: 150px; padding-left: 20px;" >
+            </div>
+            <ul type="none">
+                <div class="rightfoot">
+                    <div class="about">
+                        <li>Get Help</li>
+                        <li>Buy gift cards</li>
+                        <li>Add your restaurant</li>
+                        <li>Sign up to deliver</li>
+                        <li>Create a business account</li>
+                        <li>Promotions</li>
+                    </div>
+                    <div class="about" style="padding-left: 150px;">
+                        <li>Restaurants near me</li>
+                        <li>View all cities</li>
+                        <li>View all countries</li>
+                        <li>Pickup near me</li>
+                        <li>About Uber Eats</li>
+                        <li><i class="fa-solid fa-language"></i> English</li>
+                    </div>
+                </div>
+                
+            </ul>
+        </div><br><br>
+        <div class="bottom" style="padding: 50px;">
+            <img src="image/facebook logo.png" alt="" style="width: 20px;">
+            <img src="image/twitter logo.png" alt="" style="width: 20px;">
+            <img src="image/instagram logo.png" alt="" style="width: 20px;">
+            <p style="font-size: 14px; padding-left: 400px; text-align: right;">Privacy Policy  Terms &nbsp; &nbsp; &nbsp; &nbsp; Pricing &nbsp; &nbsp; &nbsp; &nbsp; Do not sell or share my personal information <br><br>
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. &nbsp; &nbsp; © 2022 Uber Technologies Inc.</p>
+        </div>
+
+    </div>      
+           
     
 
             
