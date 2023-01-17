@@ -2,18 +2,21 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* border: none; */
 }
 .container{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 .col-50{
-    width: 50%;
+    /* width: 50%; */
+    width: 100%;
 }
 .col-33{
-    width: 33.33%;
+    /* width: 33.33%; */
+    width: 100%;
+
 }
 button{
     border: none;
@@ -87,7 +90,8 @@ li{
 }
 .row{
     display: flex;
-    padding-bottom:  150px;
+    flex-wrap: wrap;
+    /* padding-bottom:  150px; */
     /* padding-top: 20px; */
 }
 .col-33>img{
@@ -239,6 +243,7 @@ li{
 }
 .row1{
     display: flex;
+    flex-wrap: wrap;
 }
 .pasta>h3{
     color: rgb(201,7,72);
@@ -270,41 +275,41 @@ li{
 }
 .package>p{
     text-align: center;
-    padding: 10px 500px 10px 500px;
+    padding: 10px 200px 10px 200px;
     font-size: 18px;
 }
 .small>img{
     border-radius: 80px;
-    margin: 50px 60px 10px 170px;
+    margin: 50px 125px 10px 125px;
 }
 .small>h2{
     text-align: center;
-    margin:10px 20px ;
+    margin:10px 0px ;
     color: rgb(201,7,72);
     font-size: 40px;
 }
-.col-33>p{
+.small>p{
     text-align: center;
-    margin: 0px 120px;
+    margin: 0px 50px;
     /* padding-bottom: 100px ; */
 }
-.col-33>button{
+.small>button{
     border-radius: 30px;
-    padding: 20px 100px 20px 100px;
+    padding: 15px 100px 15px 100px;
     background-color: rgb(244, 75, 131);
     color: white;
-    margin:20px 120px;
+    margin:20px 50px;
     /* font-weight: 700; */
 }
 .chef>img{
-    /* text-align: center; */
-    border-radius: 500px;
-    /* padding: 20px 450px; */
-    margin: 40px 550px;
+    border-radius: 200px;
+    align-items: center;
+    /* padding: 20px 100px; */
+    margin: 40px 400px;
 }
 .line>p{
     text-align: center;
-    padding: 0px 500px 20px 500px;
+    padding: 20px 100px 20px 100px;
     font-size: 25px;
 }
 .name>h2{
@@ -316,6 +321,8 @@ li{
 }
 .name{
     background-image: url(image/backimage7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #section8{
     background-color: #faf5e4;
@@ -324,43 +331,44 @@ li{
     color: rgb(201,7,72);
     font-size: 80px;
     text-align: center;
-    padding: 50px 0 10px 0;
+    /* padding: 50px 0 10px 0; */
+    /* margin: 50px 0; */
 }
-.sub>p{
+.sub{
     text-align: center;
-    padding: 0px 400px 20px 400px;
+    /* padding: 0px 100px 20px 100px; */
+    margin: 150px 214px;
     font-size: 25px;
 }
 .com{
-    margin: 50px 100px 80px 100px;
+    margin: 50px 0px 80px 0px;
 }
-/* .com>label{ */
-    /* background-color: white; */
-    /* color: gray; */
-    /* border-radius: 100px; */
-    /* text-align: center; */
-    /* padding: 15px 200px 15px 200px; */
+.com>input{
+    background-color: white;
+    color: gray;
+    border-radius: 100px;
+    width: 70%;
     /* margin: 20px 500px 80px 200px; */
-/* } */
+    padding:  15px 20px ;
+}
 .com>button{
     background-color:rgb(201,7,72);
     color:white;
     border-radius:100px;
     text-align: center;
-    padding: 15px 50px 15px 50px;
-    margin: 20px 500px 200px 500px;
-    /* position: absolute; */
-    /* position: relative; */
+    padding: 20px 50px ;
 }
 #footer{
      background-color: #2a2a2a;;
 }
 .col-40{
-    width: 40%;
+    /* width: 40%; */
+    width: 100%;
     color: white;
 }
 .col-20{
-    width: 20%;
+    /* width: 20%; */
+    width: 100%;
     color: white;
     
 }
@@ -380,3 +388,204 @@ li{
     font-size: 20px;
     padding: 10px 10px 10px 10px;
 }
+
+
+
+
+
+
+
+
+@media (min-width: 576px){
+    .container{
+        width: 520px;
+        /* width: 95%; */
+        margin: 0 auto;
+    }
+    .col-40{
+        width: 100%;
+    }
+    .col-20{
+        width: 100%;
+    }
+    .col-33{
+        width: 100%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .sub{
+        margin: 10px 15px;
+    }
+    .chef>img{
+        margin: 10px 80px;
+    }
+    .name{
+        width: 520px;
+    }
+    .package>h2{
+        padding: 40px 0 20px 0;
+    
+    }
+    .package>p{
+        padding: 10px 50px ;
+        font-size: 18px;
+    }
+    .small>img{
+        margin: 50px 100px 10px 200px;
+    }
+    .small>h2{
+        margin:10px 0px ;
+    }
+    .small>p{
+        margin: 0px 100px;
+        /* padding-bottom: 100px ; */
+    }
+    .small>button{
+        margin:20px 130px;
+        /* font-weight: 700; */
+    }
+}
+@media (min-width: 768px){
+    .container{
+        width: 720px;
+        /* width: 95%; */
+        margin: 0 auto;
+    }
+    .col-40{
+        width: 100%;
+    }
+    .col-20{
+        width: 50%;
+    }
+    .col-33{
+        width: 50%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .sub{
+        margin: 50px 20px;
+    }
+    .chef>img{
+        margin: 10px 200px;
+    }
+    .name{
+        width: 760px;
+    }
+    .name>h2{
+        margin: 30px 30px;
+    }
+    .package>p{
+        padding: 10px 120px ;
+    }
+    .small>img{
+        margin: 50px 50px 10px 120px;
+    }
+    .small>h2{
+        margin:20px 10px ;
+        font-size: 30px;
+    }
+    .small>p{
+        margin: 0px 20px;
+    }
+    .small>button{
+        margin:20px 50px;
+        width: 70%;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 920px;
+        /* width: 95%; */
+        margin: 0 auto;
+    }
+    .col-40{
+        width: 100%;
+    }
+    .col-20{
+        width: 33%;
+    }
+    .col-33{
+        width: 33%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .sub{
+        margin: 75px 25px;
+        padding: 60px;
+    }
+    .chef>img{
+        margin: 10px 300px;
+    }
+    .name{
+        width: 992px;
+    }
+    .name>h2{
+        margin: 30px 30px;
+        /* padding  : 20px 20px; */
+    }
+    .package>p{
+        padding: 10px 150px ;
+    }
+    .small>img{
+        margin: 50px 50px 10px 100px;
+    }
+    .small>p{
+        margin: 0px 20px;
+    }
+    .small>button{
+        margin:20px 50px;
+        padding: 15px 40px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1120px;
+        /* width: 95%; */
+        margin: 0 auto;
+    }
+    .col-40{
+        width: 40%;
+    }
+    .col-20{
+        width: 20%;
+    }
+    .col-33{
+        width: 33%;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .sub{
+        margin: 100px 50px;
+    }
+    .chef>img{
+        margin: 40px 400px;
+    }
+    .name{
+        width: 100%;
+    }
+    .line>p{
+        margin: 10px 100px;
+    }
+    .name>h2{
+        margin: 30px 30px;
+    }
+    .package>p{
+        padding: 10px 200px ;
+    }
+    .small>img{
+        margin: 50px 50px 10px 100px;
+    }
+    .small>p{
+        margin: 0px 20px;
+    }
+    .small>button{
+        margin:20px 50px;
+        padding: 15px 40px;
+    }
+}
+
+
