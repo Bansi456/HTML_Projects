@@ -6,7 +6,7 @@
     /* border: none; */
 }
 .container{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 .col-50{
@@ -95,9 +95,9 @@ li{
     /* padding-top: 20px; */
 }
 .col-33>img{
-    border-radius: 500px;
+    border-radius: 700px;
     margin: 50px 75px 10px 75px;
-    /* padding-top: 50px; */
+    /* padding-top: 200px; */
 }
 .col-33>h2{
     text-align: center;
@@ -131,7 +131,7 @@ li{
     padding: 10px 450px 50px 450px;
 }
 .menu{
-    width: 33.33%;
+    /* width: 33.33%; */
     border: dashed;
     /* font-size: 30px; */
     border-radius: 500px;
@@ -445,6 +445,21 @@ li{
         margin:20px 130px;
         /* font-weight: 700; */
     }
+    .pasta>button{
+        margin: 50px 100px 50px 100px;
+    }
+    .pasta>h3{
+        padding: 50px 100px 30px 125px;
+    }
+    .ourmenu>p{
+        padding: 10px 50px 10px 50px;
+    }
+    .follow>p{
+        padding: 10px 50px 50px 50px;
+    }
+    .follow>h2{
+        padding: 80px 0 30px 0;
+    }
 }
 @media (min-width: 768px){
     .container{
@@ -493,6 +508,30 @@ li{
         margin:20px 50px;
         width: 70%;
     }
+    .pasta>button{
+        margin: 50px 200px 50px 200px;
+    }
+    .pasta>h3{
+        padding: 50px 100px 30px 125px;
+    }
+    .ourmenu>p{
+        padding: 10px 100px 10px 100px;
+    }
+    .follow>p{
+        padding: 10px 50px 50px 50px;
+    }
+    .follow>h2{
+        padding: 80px 0 30px 0;
+    }
+    .menu{
+        margin: 50px 20px;
+    }
+    .col-33>img{
+        margin: 50px 15px;
+    }
+    .col-33>p{
+        margin: 0 50px;
+    }
 }
 @media (min-width: 992px){
     .container{
@@ -510,7 +549,7 @@ li{
         width: 33%;
     }
     .col-50{
-        width: 100%;
+        width: 50%;
     }
     .sub{
         margin: 75px 25px;
@@ -538,6 +577,34 @@ li{
     .small>button{
         margin:20px 50px;
         padding: 15px 40px;
+    }
+    .pasta>button{
+        margin: 20px 50px 20px 100px;
+    }
+    .pasta>h3{
+        padding: 100px 10px 30px 50px;
+    }
+    .pasta>p{
+        padding: 10px 50px 30px 50px;
+    }
+    .ourmenu>p{
+        padding: 10px 200px 10px 200px;
+    }
+    .follow>p{
+        padding: 10px 100px 50px 100px;
+    }
+    .follow>h2{
+        padding: 80px 0 30px 0;
+    }
+    .menu{
+        padding: 75px 0px;
+    }
+    .col-33>img{
+        margin: 0px 0px;
+        padding: 75px 0;
+    }
+    .col-33>p{
+        margin: 0 50px;
     }
 }
 @media (min-width: 1200px){
@@ -585,6 +652,24 @@ li{
     .small>button{
         margin:20px 50px;
         padding: 15px 40px;
+    }
+    .pasta>button{
+        margin: 50px 50px 50px 150px;
+    }
+    .pasta>h3{
+        padding: 150px 0px 30px 50px;
+    }
+    .pasta>p{
+        padding: 10px 50px 30px 50px;
+    }
+    .ourmenu>p{
+        padding: 10px 300px 10px 300px;
+    }
+    .follow>p{
+        padding: 10px 100px 50px 100px;
+    }
+    .menu{
+        padding: 115px 0px;
     }
 }
 
