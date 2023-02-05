@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 50px;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .cal{
+            background-color: teal;
+            text-align: center;
+            margin-top: 100px;
+            padding: 40px 20px;
+        }
+        #value1,
+        #value2 {
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+            font-size: 20px;
+        }
+        button {
+            margin: 15px;
+            padding: 10px 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 25px;
+            /* padding: 40px 20px; */
+    
+        }
+
+        #dispresult {
+            font-size: 25px;
+            display: inline-block;
+            /* color: black; */
+            background-color:white;
+            padding: 20px 10px;
+            width: 25%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="cal">
+            <input type="text" name="first" placeholder="enter value" id="value1" title="value1">
+            <br><br>
+            <input type="text" name="second" placeholder="enter value" id="value2" title="value2">
+            <br><br>
+            <button id="add" onclick="add(this)">+</button>
+            <button id="minus" onclick="min(this)">-</button>
+            <button id="multiply" onclick="multi(this)">*</button>
+            <button id="divide" onclick="divide(this)">/</button>
+            <br>
+            <!-- <input type="text" name="third" id="dispresult" title="result"> -->
+            <p>= &nbsp; &nbsp;<span id="dispresult"></span></p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    function add(kuchbhi) {
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+        document.getElementById("dispresult").innerHTML =parseInt(a) + parseInt(b);
+    }
+    function min(e) {
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+        document.getElementById("dispresult").innerHTML = (a - b);
+    }
+    function multi(e) {
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+        document.getElementById("dispresult").innerHTML = (a * b);
+    }
+    function divide(e) {
+        let a = document.getElementById("value1").value;
+        let b = document.getElementById("value2").value;
+        document.getElementById("dispresult").innerHTML = (a / b);
+    }
+
+</script>

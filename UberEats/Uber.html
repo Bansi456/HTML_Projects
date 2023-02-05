@@ -44,11 +44,17 @@
             padding-left: 30px;
             font-size: 60px;
         }
-        .serchbar{
+        label{
             padding:15px ;
             padding-right: 350px;
-            border: white;
+            border: none;
+            outline: none;
             font-size: 20px;
+            background-color: white;
+        }
+        input{
+            border: none;
+            outline: none;
         }
         select{
             border:wheat;
@@ -132,15 +138,15 @@
                 <div class="nav" style="margin-left:900px;"><button style="background-color: white; color: black; font-size: 20px;">Log in</button></div>
                 <div class="nav"><button style="font-size: 20px;">Sign up</button></div>
 
-        <div >
+        <div class="serchbar">
             <h1>Order food to your door</h1>
             <br><br>
-            <label for="" style="margin-left: 30px;"><i class="fa-solid fa-location-dot"></i>
+            <label for="" style="margin-left: 30px;"><i class="fa-solid fa-location-dot"></i>&nbsp;
             <input class="serchbar" type="serch" id="location" placeholder="Enter delivery address"></label>
             <!-- <label for=""></label> -->
             <select name="delivery time" id="delivery time">
-                <option value="delivernow">Deliver now</option>
-                <option value="Scheduleforlater">Schedule for later</option>
+                <option value="delivernow">&#128338; &nbsp; Deliver now</option>
+                <option value="Scheduleforlater">&#128197; &nbsp; Schedule for later</option>
             </select>
             <button style="border-radius: 5px;padding: 18px; font-size: 15px;"><b>Find Food</b></button>
             <br><br>
