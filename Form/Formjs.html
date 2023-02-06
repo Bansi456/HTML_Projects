@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 0 auto ;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        fieldset{
+            margin: 0 auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form (Js)</h1>
+    <br>
+    <fieldset>
+        <legend></legend> <br>
+        <label for="name">Name :</label>
+        <input type="text" name="uname" id="uname" placeholder="Enter Your Name" onfocus="user(this)"><span id="error1"></span><br><br>
+        <label for="email">Email :</label>
+        <input type="email" name="uemail" id="uemail" placeholder="Enter Your Email" onfocus="email(this)"><span id="error3"></span><br><br>
+        <label for="pasword">Password :</label>
+        <input type="password" name="upass" id="upass" placeholder="Enter Your Password" onfocus="pass(this)"><span id="error2"></span><br><br>
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" name="umobile" id="umobile" placeholder="Enter Your Mobile NO" onfocus="mobile(this)"><span id="error4"></span><br><br><br>
+        <button>submit</button>
+
+    </fieldset>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function valid_name(e) {
+        document.getElementById("uname").style.background="blue";
+        document.getElementById("upass").style.background="blue";
+        // document.getElementById("uname").style.background="blue";
+        // document.getElementById("uname").style.background="blue";
+    }
+</script>
