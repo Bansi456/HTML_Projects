@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: minmax(100px,auto);
+            gap: 10px;
+            padding: 0 15px;
+            margin: 100px 200px ;
+            /* border: solid black; */
+        }
+        .box1{
+            background-color: black;
+            border: solid black;
+            color: white;
+            grid-column: 1/3;
+        }
+        .box2{
+            background-color: black;
+            border: solid black;
+            color: white;
+            grid-column: 4/6;
+        }
+        .box3{
+            background-color: black;
+            border: solid black;
+            color: white;
+            grid-row: 2/6;
+        }
+        .box4{
+            background-color: black;
+            border: solid black;
+            /* color: white; */
+            grid-row: 2/6;
+            grid-column: 2/6;
+
+        }
+        .box5{
+            background-color:gray;
+            border: solid black;
+            color: black;
+            grid-column: 2/3;
+            grid-row: 2/6;
+            margin: 20px;
+
+        }
+        .box6{
+            background-color:gray;
+            border: solid black;
+            color: black;
+            grid-row: 2/4;
+            grid-column: 3/6;
+            margin: 20px 10px 50px 30px;
+
+        }
+        .box7{
+            background-color:gray;
+            border: solid black;
+            color:black;
+            grid-row:4/6;
+            grid-column: 4/6;
+            margin:0 10px 10px 0 ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+    <div class="box4">D</div>
+    <div class="box5">E</div>
+    <div class="box6">F</div>
+    <div class="box7">G</div>
+    </div>
+    
+
+</body>
+</html>
