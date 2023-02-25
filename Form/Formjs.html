@@ -19,6 +19,10 @@
             margin: 0 auto;
             width: 50%;
         }
+        td {
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -26,16 +30,33 @@
         <h1>Form (Js)</h1>
     <br>
     <fieldset>
-        <legend></legend> <br>
-        <label for="name">Name :</label>
-        <input type="text" name="uname" id="uname" placeholder="Enter Your Name" onfocus="user(this)"><span id="error1"></span><br><br>
-        <label for="email">Email :</label>
-        <input type="email" name="uemail" id="uemail" placeholder="Enter Your Email" onfocus="email(this)"><span id="error3"></span><br><br>
-        <label for="pasword">Password :</label>
-        <input type="password" name="upass" id="upass" placeholder="Enter Your Password" onfocus="pass(this)"><span id="error2"></span><br><br>
-        <label for="mobile">Mobile No:</label>
-        <input type="tel" name="umobile" id="umobile" placeholder="Enter Your Mobile NO" onfocus="mobile(this)"><span id="error4"></span><br><br><br>
-        <button>submit</button>
+        <legend></legend>
+        <table>
+            <tr>
+                <td> <label for="name">Name :</label></td>
+                <td> <input type="text" name="uname" id="uname" placeholder="Enter Your Name" onkeypress="" ><span id="error1"></span></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email :</label></td>
+                <td><input type="email" name="uemail" id="uemail" placeholder="Enter Your Email" ><span id="error2"></span><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="pasword">Password :</label></td>
+                <td><input type="password" name="upass" id="upass" placeholder="Enter Your Password" ><span id="error3"></span></td>
+            </tr>
+            <tr>
+                <td><label for="conform">Confirm Password:</label></td>
+                <td><input type="password" name="upass" id="upass" placeholder="Enter Your Password" ><span id="error4"></span></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile No:</label></td>
+                <td><input type="tel" name="umobile" id="umobile" placeholder="Enter Your Mobile NO"><span id="error5"></span></td>
+            </tr>
+            <tr>
+                <td><button>Submit</button></td>
+                <!-- <td> <input type="submit" name="submit" id="submit" onclick="submit(this)"><span id="required"></span></td> -->
+            </tr>
+        </table>
 
     </fieldset>
     </div>
@@ -44,8 +65,16 @@
 </html>
 
 <script>
-    function valid_name(e) {
-        document.getElementById("uname").style.background="blue";
-        document.getElementById("upass").style.b
+    function valid_name() {
+        let uname=document.getElementById("uname").value;
+        if(isNaN(nm))
+        {
+            return true;
+        }
+        else{
+            return false;
+            console.log(`Entered name is numeric: not allowed here`);
+        }
     }
+
 </script>
